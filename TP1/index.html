@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+    <form action="" class="mid-form">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" id="txtNombre" name="txtNombre">
+        <label for="txtApellido">Apellido:</label>
+        <input type="text" id="txtApellido" name="txtApellido">
+        <label for="txtDNI">DNI:</label>
+        <input type="text" id="txtDNI" name="txtDNI">
+        <label for="txtMail">Mail:</label>
+        <input type="text" id="txtMail" name="txtMail">
+        <label for="txtTelefono">Telefono:</label>
+        <input type="text" id="txtTelefono" name="txtTelefono">
+        <label for="txtTipoSeguro">Tipo de Seguro :</label>
+        <select id="cmbSeguro" name="cmbSeguro" onloadeddata="cambiaValor()" onchange="cambiaValor()">
+            <option value="Seleccionar" selected>Seleccionar</option>
+            <option value="Basico">Basico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Premium">Premium</option>
+        </select>
+        <p id="lblImporte">Debe seleccionar un tipo de seguro para saber su valor.</p>
+        <input type="submit" value="Submit" class="btn btn-white ">
+      </form> 
+    </div>
+</body>
+
+</html>
