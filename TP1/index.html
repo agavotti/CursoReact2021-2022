@@ -10,17 +10,17 @@
 </head>
 <body>
     <div id="content">
-    <form action="" class="mid-form">
+    <form class="mid-form" onsubmit="enviar(); return false;">
         <label for="txtNombre">Nombre:</label>
-        <input type="text" id="txtNombre" name="txtNombre">
+        <input type="text" id="txtNombre" name="txtNombre"><span id="NombreError"></span>
         <label for="txtApellido">Apellido:</label>
-        <input type="text" id="txtApellido" name="txtApellido">
+        <input type="text" id="txtApellido" name="txtApellido"><span id="ApellidoError"></span>
         <label for="txtDNI">DNI:</label>
-        <input type="text" id="txtDNI" name="txtDNI">
+        <input type="text" id="txtDNI" name="txtDNI"><span id="DniError"></span>
         <label for="txtMail">Mail:</label>
-        <input type="text" id="txtMail" name="txtMail">
+        <input type="text" id="txtMail" name="txtMail"><span id="MailError"></span>
         <label for="txtTelefono">Telefono:</label>
-        <input type="text" id="txtTelefono" name="txtTelefono">
+        <input type="text" id="txtTelefono" name="txtTelefono"><span id="TelefonoError"></span>
         <label for="txtTipoSeguro">Tipo de Seguro :</label>
         <select id="cmbSeguro" name="cmbSeguro" onloadeddata="cambiaValor()" onchange="cambiaValor()">
             <option value="Seleccionar" selected>Seleccionar</option>
@@ -29,7 +29,7 @@
             <option value="Premium">Premium</option>
         </select>
         <p id="lblImporte">Debe seleccionar un tipo de seguro para saber su valor.</p>
-        <input type="submit" value="Submit" class="btn btn-white ">
+        <input type="submit" value="Submit" class="btn btn-white">
       </form> 
     </div>
 </body>
